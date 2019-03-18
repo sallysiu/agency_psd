@@ -6,3 +6,5 @@ node_modules
 *.jpg
 *.psd
 font-sizes.png
+
+/styles/partials
