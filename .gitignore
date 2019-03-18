@@ -2,3 +2,7 @@ node_modules
 .DS_Store
 *.pdf
 *.zip
+*.md
+*.jpg
+*.psd
+font-sizes.png
