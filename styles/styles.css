@@ -145,7 +145,8 @@ a {
 
 ul {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+  margin: 0; }
   ul li {
     padding: 5px 10px;
     display: inline-block; }
@@ -157,7 +158,12 @@ header {
   height: 100vh;
   background: url("/assets/background-5.jpg") no-repeat;
   background-size: cover;
-  color: black; }
+  color: black;
+  position: relative; }
+  header .wrapper {
+    border: 1px solid green;
+    position: absolute;
+    top: 25vh; }
 
 .flex_container {
   display: -webkit-box;
@@ -167,14 +173,14 @@ header {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
   .flex_container.top {
-    border: 2px solid red; }
+    border: 2px solid red;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
   .flex_container .logo {
     width: 20%;
     -ms-flex-item-align: start;
@@ -207,3 +213,21 @@ header {
       color: indigo; }
     .flex_container .social img {
       width: 30px; }
+  .flex_container.stats {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    .flex_container.stats div {
+      width: 25%;
+      background: rgba(117, 117, 117, 0.6);
+      border-right: 1px whitesmoke solid;
+      color: white;
+      text-align: center;
+      padding: 5vh 0; }
+      .flex_container.stats div:last-of-type {
+        border-right: none; }
+      .flex_container.stats div span {
+        display: block;
+        color: red;
+        font-weight: bold;
+        font-size: 2rem; }

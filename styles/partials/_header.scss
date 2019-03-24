@@ -4,4 +4,14 @@ header {
 	background-size: cover;
 	// margin: 0 auto;
 	color: black;
+	position: relative;
+
+
+	.wrapper {
+		border: 1px solid green;
+		position: absolute;
+		top: 25vh;
+
+	}
+
 }
