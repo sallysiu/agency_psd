@@ -177,10 +177,33 @@ header {
     border: 2px solid red; }
   .flex_container .logo {
     width: 20%;
-    border: solid blue 1px; }
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    border: solid blue 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
     .flex_container .logo img {
       border: solid green 2px; }
     .flex_container .logo h2 {
-      font-size: 20px; }
+      font-size: 20px;
+      margin: 0;
+      -ms-flex-item-align: center;
+      align-self: center; }
   .flex_container .nav {
     border: 1px solid yellowgreen; }
+  .flex_container .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: 1.3px solid blue; }
+    .flex_container .social i {
+      color: indigo; }
+    .flex_container .social img {
+      width: 30px; }
