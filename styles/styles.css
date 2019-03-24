@@ -147,7 +147,11 @@ ul {
   list-style: none;
   padding: 0; }
   ul li {
-    padding: 5px 10px; }
+    padding: 5px 10px;
+    display: inline-block; }
+
+img {
+  display: inline-block; }
 
 header {
   height: 100vh;
@@ -162,8 +166,21 @@ header {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row; }
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
   .flex_container.top {
     border: 2px solid red; }
+  .flex_container .logo {
+    width: 20%;
+    border: solid blue 1px; }
+    .flex_container .logo img {
+      border: solid green 2px; }
+    .flex_container .logo h2 {
+      font-size: 20px; }
   .flex_container .nav {
     border: 1px solid yellowgreen; }

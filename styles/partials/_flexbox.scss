@@ -1,13 +1,33 @@
 .flex_container {
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 
 	&.top {
 		border: 2px solid red;
 	}
 
+	.logo {
+		width: 20%;
+		border: solid blue 1px;
+
+		img {
+			border: solid green 2px;
+		}
+		
+		h2 {
+			font-size: 20px;
+		}
+	}
+
 	.nav {
 		border: 1px solid yellowgreen;
+		// width: 50%;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		
 	}
 
 
