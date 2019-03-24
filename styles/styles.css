@@ -133,7 +133,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   box-sizing: border-box; }
 
 body {
-  background: lightblue; }
+  font-family: 'Work Sans', sans-serif; }
 
 .wrapper {
   width: 80%;
@@ -154,16 +154,58 @@ ul {
 img {
   display: inline-block; }
 
+a.link-more {
+  display: inline-block;
+  background: transparent;
+  border: 2px solid #ff3568;
+  color: white;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  padding: 1rem 2rem; }
+
 header {
   height: 100vh;
-  background: url("/assets/background-5.jpg") no-repeat;
+  background: url("/assets/taylor-grote-415993-unsplash.jpg") no-repeat;
   background-size: cover;
-  color: black;
+  color: white;
   position: relative; }
   header .wrapper {
-    border: 1px solid green;
     position: absolute;
-    top: 25vh; }
+    top: 25vh;
+    width: 80%;
+    margin: 0 10%;
+    font-family: 'Playfair Display', serif; }
+    header .wrapper p {
+      font-size: 1.2rem;
+      font-family: 'Work Sans', sans-serif;
+      font-weight: 200;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      color: lightgray;
+      margin: 2rem 0 2rem 0; }
+      header .wrapper p:before {
+        content: "\201C";
+        font-family: serif;
+        margin: 0;
+        display: inline;
+        color: #ff3568;
+        font-size: 2rem;
+        padding: 0 10px 0 0; }
+    header .wrapper h1 {
+      font-size: 4rem;
+      margin: 0 0 5px 0;
+      letter-spacing: 1px;
+      font-weight: lighter;
+      text-shadow: 0px 0px 2px grey; }
+    header .wrapper h3 {
+      font-size: 1.3rem;
+      font-weight: 300;
+      letter-spacing: 0.6px;
+      margin: 0;
+      padding: 0.4rem 0.8rem;
+      display: inline-block;
+      background: #ff3568;
+      text-shadow: 0px 0px 1px black; }
 
 .flex_container {
   display: -webkit-box;
@@ -177,10 +219,11 @@ header {
   -ms-flex-align: center;
   align-items: center; }
   .flex_container.top {
-    border: 2px solid red;
+    background: lightgray;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between; }
+    justify-content: space-between;
+    color: black; }
   .flex_container .logo {
     width: 20%;
     -ms-flex-item-align: start;
@@ -219,15 +262,17 @@ header {
     width: 100%; }
     .flex_container.stats div {
       width: 25%;
-      background: rgba(117, 117, 117, 0.6);
-      border-right: 1px whitesmoke solid;
+      background: rgba(43, 43, 43, 0.7);
+      border-right: 0.5px grey solid;
       color: white;
       text-align: center;
-      padding: 5vh 0; }
+      text-transform: capitalize;
+      padding: 5vh 0;
+      font-weight: 200; }
       .flex_container.stats div:last-of-type {
         border-right: none; }
       .flex_container.stats div span {
         display: block;
-        color: red;
-        font-weight: bold;
+        color: #ff3568;
+        font-weight: 700;
         font-size: 2rem; }

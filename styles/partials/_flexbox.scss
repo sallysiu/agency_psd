@@ -4,8 +4,10 @@
 	align-items: center;
 
 	&.top {
-		border: 2px solid red;
+		background: lightgray;
 		justify-content: space-between;
+		color: black;
+
 	}
 
 	.logo {
@@ -57,11 +59,13 @@
 		div {
 			
 			width: 25%;
-			background: rgba(117, 117, 117, 0.6);
-			border-right: 1px whitesmoke solid;
+			background: rgba(43, 43, 43, 0.7);
+			border-right: 0.5px grey solid;
 			color: white;
 			text-align: center;
+			text-transform: capitalize;
 			padding: 5vh 0;
+			font-weight: 200;
 
 			&:last-of-type {
 				border-right: none;
@@ -69,8 +73,8 @@
 
 			span {
 				display: block;
-				color: red;
-				font-weight: bold;
+				color: rgb(255, 53, 104);
+				font-weight: 700;
 				font-size: 2rem;
 
 			}

@@ -1,16 +1,61 @@
 header {
 	height: 100vh;
-	background: url("/assets/background-5.jpg") no-repeat;
+	background: url("/assets/taylor-grote-415993-unsplash.jpg") no-repeat; // business time photo by Marten Bjork on Unsplash
 	background-size: cover;
 	// margin: 0 auto;
-	color: black;
+	color: white;
 	position: relative;
 
 
 	.wrapper {
-		border: 1px solid green;
+		// border: 1px solid green;
 		position: absolute;
 		top: 25vh;
+		width: 80%;
+		margin: 0 10%;
+		font-family: 'Playfair Display', serif;
+
+		p {
+			font-size: 1.2rem;
+			font-family: 'Work Sans', sans-serif;
+			font-weight: 200;
+			font-style: italic;
+			letter-spacing: 0.5px;
+			color: lightgray;
+			margin: 2rem 0 2rem 0;
+
+			&:before {
+				content: "\201C";
+				font-family: serif;
+				margin: 0;
+				display: inline;
+				color: rgb(255, 53, 104);
+				font-size: 2rem;
+				padding: 0 10px 0 0;
+			}
+
+	}
+
+	h1 {
+		font-size: 4rem;
+		margin: 0 0 5px 0;
+		letter-spacing: 1px;
+		font-weight: lighter;
+		text-shadow: 0px 0px 2px grey;
+	}
+
+	h3 {
+		font-size: 1.3rem;
+		font-weight: 300;
+		letter-spacing: 0.6px;
+		margin: 0;
+		padding: 0.4rem 0.8rem;
+		display: inline-block;
+		background: rgb(255, 53, 104);
+		text-shadow: 0px 0px 1px black;
+	}
+
+
 
 	}
 
