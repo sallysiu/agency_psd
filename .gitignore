@@ -7,4 +7,5 @@ node_modules
 *.psd
 font-sizes.png
 
-/styles/partials
+/styles/styles.scss
+prepros-6.config
